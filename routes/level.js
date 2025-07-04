@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const levelController = require("../controller/Api/levelcontroller.js");
+const levelController = require("../controller/Api/levelController.js");
 const {verifyToken, isAdmin} = require("../middleware/auth.js");
 
 

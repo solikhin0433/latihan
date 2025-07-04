@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const userController = require("../controller/Api/usercontroller.js");
+const userController = require("../controller/Api/userController.js");
 const { verifyToken, isAdmin } = require("../middleware/auth.js");
 
 // router.get("/", userController.getAllUsers);

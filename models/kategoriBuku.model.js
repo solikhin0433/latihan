@@ -4,11 +4,11 @@ const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
   class KategoriBuku extends Model {
     static associate(models) {
-      // Relasi dengan model Book (jika nanti dibuat)
-      // KategoriBuku.hasMany(models.Book, {
-      //   foreignKey: 'kategoriId',
-      //   as: 'books'
-      // });
+      // Relasi dengan model buku
+          KategoriBuku.hasMany(models.Buku, {
+          foreignKey: 'kategoriBukuId',
+          as: 'buku'
+          });
     }
   }
   
